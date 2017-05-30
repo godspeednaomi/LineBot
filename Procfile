@@ -1,1 +1,1 @@
-web: node ./example/echo.js
+web: node ./examples/echo.js
