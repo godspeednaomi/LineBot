@@ -32,6 +32,7 @@
   "homepage": "https://github.com/boybundit/linebot#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "express": "^4.15.3",
     "node-fetch": "^1.6.3"
   },
   "devDependencies": {
