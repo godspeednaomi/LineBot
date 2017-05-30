@@ -15,9 +15,9 @@ app.post('/linewebhook', linebotParser);
 
 bot.on('message', function (event) {
 	event.reply(event.message.text).then(function (data) {
-		console.log('Success', process.env.CHANNEL_ID);
+		console.log('Success', data);
 	}).catch(function (error) {
-		console.log('Error', process.env.CHANNEL_ID);
+		console.log('Error', error);
 	});
 });
 
