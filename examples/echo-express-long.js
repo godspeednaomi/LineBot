@@ -23,8 +23,13 @@ app.post('/linewebhook', parser, function (req, res) {
 	bot.parse(req.body);
 	return res.json({});
 });
-
+let light = ''
 bot.on('message', function (event) {
+	if(event.message.text=='關燈'){
+		light = 'light off'
+	}else{
+		light = 'light on'
+	}
 	event.reply(event.message.text).then(function (data) {
 		console.log('Success', data);
 	}).catch(function (error) {
@@ -32,7 +37,7 @@ bot.on('message', function (event) {
 	});
 });
 app.get('/control',function(req,res){
-	res.send('light on');
+	res.send(light);
 })
 app.listen(process.env.PORT || 80, function () {
 	console.log('LineBot is running.');
