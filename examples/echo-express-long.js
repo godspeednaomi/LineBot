@@ -31,7 +31,9 @@ bot.on('message', function (event) {
 		console.log('Error', error);
 	});
 });
-
+app.get('/control',function(req,res){
+	res.send('light on');
+})
 app.listen(process.env.PORT || 80, function () {
 	console.log('LineBot is running.');
 });
