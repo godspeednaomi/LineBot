@@ -1,1 +1,1 @@
-web: node ./examples/echo-express.js
+web: node ./examples/echo-express-long.js

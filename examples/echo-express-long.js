@@ -3,9 +3,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const bot = linebot({
-	channelId: process.env.CHANNEL_ID,
-	channelSecret: process.env.CHANNEL_SECRET,
-	channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
+	channelId: '1516658778',
+	channelSecret: 'e5fda530ba18a6b36a476e360b35bb66',
+	channelAccessToken: 'HkzMFolGyLSo/MbkU10axpqTOLweKUOTzrsiQ7DkKgbPLKarLOXe61q6xYoFGOwvHQz2zy/AftCXZAyrd+49YMEEpLPLcxoBAY6rx2Z/lIo5ty5L6fKkFSDUEH3ePkdjBuxV9CaERDna++44fcVVpgdB04t89/1O/w1cDnyilFU='
 });
 
 const app = express();
