@@ -15,7 +15,7 @@ app.post('/linewebhook', linebotParser);
 
 bot.on('message', function (event) {
 	event.reply(event.message.text).then(function (data) {
-		console.log('Success', data);
+		console.log('Success', 'testttttttttttttttttttttt');
 	}).catch(function (error) {
 		console.log('Error', error);
 	});
