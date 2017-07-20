@@ -30,7 +30,7 @@ bot.on('message', function (event) {
 	}else{
 		light = 'light on'
 	}
-	event.reply(event.message.text).then(function (data) {
+	event.reply("好的!完成\"" + event.message.text + "\"動作" ).then(function (data) {
 		console.log('Success', data);
 	}).catch(function (error) {
 		console.log('Error', error);
